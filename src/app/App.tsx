@@ -9,19 +9,20 @@ import { MainPage } from 'pages/MainPage'
 import { AppRouter } from './providers/routers'
 import { Navbar } from 'widgets/Navbar'
 import { Sidebar } from 'widgets/Sidebar'
-
-
+import { useTranslation } from 'react-i18next'
 
 const App = () => {
 
   const {theme} = useTheme();
   return (
     <div className={classNames('app', {}, [theme])}>
-         <Navbar />
+      <Suspense fallback=''>
+       <Navbar />
          <div className='content-page'>
             <Sidebar />
             <AppRouter />
          </div>
+      </Suspense>
     </div>
   )
 }
