@@ -5,7 +5,7 @@ const AboutPage = () => {
   const {t} =useTranslation('about');
   return (
     <div>
-      {t<string>('О сайте')}
+      {t<string>('О сайте',{ns: 'about'})}
     </div>
   )
 }
