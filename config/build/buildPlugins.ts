@@ -24,7 +24,7 @@ export function buildPlugins({paths, isDev}: BuildOptions): webpack.WebpackPlugi
         new webpack.HotModuleReplacementPlugin(),
         new ReactRefreshWebpackPlugin(),
         new BundleAnalyzerPlugin({
-            openAnalyzer: false;
+            openAnalyzer: false,
         }),
        ]
 }
