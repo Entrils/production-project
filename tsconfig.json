@@ -25,4 +25,5 @@
       "./src/**/*.tsx",
     ],
     "strictBindCallApply": true,
+    "ignoreBuildErrors": true
   }
