@@ -8,7 +8,8 @@ import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 
 export function buildPlugins({paths, isDev}: BuildOptions): webpack.WebpackPluginInstance[] {
     const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
-    return [
+
+    const plugins = [
         new HTMLWebpackPlugin({
             template: paths.html,
         }),
@@ -21,10 +22,15 @@ export function buildPlugins({paths, isDev}: BuildOptions): webpack.WebpackPlugi
         new webpack.DefinePlugin({
             __IS_DEV__: JSON.stringify(isDev),
         }),
+    ]
+    if (isDev){
+    plugins.push(
         new webpack.HotModuleReplacementPlugin(),
-        new ReactRefreshWebpackPlugin(),
-        new BundleAnalyzerPlugin({
-            openAnalyzer: false,
-        }),
-       ]
+    new ReactRefreshWebpackPlugin(),
+    new BundleAnalyzerPlugin({
+        openAnalyzer: false,
+    }),)}
+
+
+    return plugins
 }
