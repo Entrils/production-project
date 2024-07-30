@@ -37,6 +37,7 @@
 .link{
     margin-left: 10px;
     opacity: 1;
+    transition: 0.3s opacity;
 }
 
 .icon{
@@ -54,7 +55,6 @@
 
     .link{
         opacity: 0;
-        transition: 0.3s opacity;
         width: 0;
     }
     .items{
