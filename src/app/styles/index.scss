@@ -4,15 +4,12 @@
 @import 'themes/dark';
 
 body{
-    background: var(--bg-color);
     color: var(--primary-color);
     font: var(--font-m);
 }
 
 .app{
     background: var(--bg-color);
-    color: var(--primary-color);
-    font: var(--font-m);
     min-height: 100vh;
 }
 
