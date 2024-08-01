@@ -3,5 +3,5 @@
 /.vscode
 *storybook.log
 /storybook-static
-.loki/report.html
+.loki/report.htm
 .loki/report.json
