@@ -1,5 +1,6 @@
 {
-  "": "",
+  "decrement": "Decrement",
+  "increment": "Increment",
   "Войти": "Auth",
   "Выдать ошибку": "Throw error",
   "Главная": "Main",
