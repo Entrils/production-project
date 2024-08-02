@@ -1,6 +1,8 @@
 {
   "decrement": "Decrement",
   "increment": "Increment",
+  "Введите логин": "Username",
+  "Введите пароль": "Password",
   "Войти": "Auth",
   "Выдать ошибку": "Throw error",
   "Главная": "Main",
